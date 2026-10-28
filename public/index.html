@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Management - CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Item Management</h1>
+
+        <form id="itemForm">
+            <input type="hidden" id="itemId">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter item name" required>
+
+            <label for="price">Price</label>
+            <input type="number" id="price" placeholder="Enter item price"
+                   min="0" step="any" required>
+
+            <div class="form-actions">
+                <button type="submit" id="submitBtn">Submit</button>
+                <button type="button" id="cancelBtn" class="cancel-btn" hidden>
+                    Cancel Edit
+                </button>
+            </div>
+        </form>
+
+        <h2>Item List</h2>
+        <p id="message" role="status" aria-live="polite"></p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="itemTableBody"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
