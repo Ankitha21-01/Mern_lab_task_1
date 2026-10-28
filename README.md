@@ -1,30 +1,35 @@
 # MERN Lab Task 1 — CRUD Operations on Items
 
-A simple Item Management application using HTML, CSS, JavaScript, Node.js, Express.js, REST API routes, and a JavaScript array.
+## Aim
+To develop an item management application that performs CRUD operations using HTML, CSS, JavaScript, Node.js, Express.js, REST API routes, and a JavaScript array.
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Express.js
+- REST API
 
 ## Features
-
-- **Create:** Add a new item with name and price.
+- **Create:** Add a new item with its name and price.
 - **Read:** Display all items in a table.
 - **Update:** Edit an existing item's name or price.
 - **Delete:** Remove an item after confirmation.
 
 ## Requirements
+1. Node.js (includes npm)
+2. Visual Studio Code or another code editor
+3. A web browser
 
-Install these on your computer:
+No separate database is required for this lab task.
 
-1. **Node.js (LTS)** — includes npm.
-2. **Visual Studio Code** or another code editor.
-3. A web browser.
-
-Python alone is not sufficient to run this Express.js project. No separate database is needed.
-
-## Run locally
+## How to Run Locally
 
 1. Download or clone this repository.
 2. Open the project folder in VS Code.
 3. Open a terminal in the folder containing `package.json`.
-4. Install dependencies:
+4. Install the dependencies:
 
    ```bash
    npm install
@@ -36,46 +41,42 @@ Python alone is not sufficient to run this Express.js project. No separate datab
    npm start
    ```
 
-6. Open <http://localhost:3000> in your browser.
+6. Open `http://localhost:3000` in your browser.
 
-Do not open `public/index.html` directly. The page must be served by Express so it can call the API.
+**Note:** Do not open `public/index.html` directly. The application must run through the Express server so the frontend can communicate with the API.
 
-## REST API endpoints
+## REST API Endpoints
 
 | Method | Endpoint | Purpose |
 |---|---|---|
-| GET | `/api/items` | Get all items |
-| POST | `/api/items` | Add an item |
-| PUT | `/api/items/:id` | Update an item |
+| GET | `/api/items` | Retrieve all items |
+| POST | `/api/items` | Add a new item |
+| PUT | `/api/items/:id` | Update an existing item |
 | DELETE | `/api/items/:id` | Delete an item |
 
-## Initial data
+## Initial Data
 
-The app starts with two items:
+The application starts with two items:
 
 | ID | Name | Price |
 |---:|---|---:|
 | 1 | Book | 250 |
 | 2 | Pen | 25 |
 
-## Important note
+## Output Screenshots
 
-The array is stored in server memory. Changes are temporary and will reset when the server restarts. This is intentional for the lab task, which asks for an array rather than a database.
+### 1. Item Management Interface
+![Item Management](output/item_management.png)
 
-## Upload to GitHub
+### 2. Adding an Item
+![Adding an Item](output/addind_item.png)
 
-1. Create a new repository on GitHub.
-2. Extract this project ZIP.
-3. Open the extracted folder in VS Code.
-4. Use GitHub Desktop, or run the following commands in the project folder after Git is installed and configured:
+### 3. Item Added Successfully
+![Item Added](output/item_added.png)
 
-   ```bash
-   git init
-   git add .
-   git commit -m "Add MERN Lab Task 1 CRUD application"
-   git branch -M main
-   git remote add origin YOUR_GITHUB_REPOSITORY_URL
-   git push -u origin main
-   ```
+### 4. Item Deleted Successfully
+![Item Deleted](output/item_deleted.png)
 
-Replace `YOUR_GITHUB_REPOSITORY_URL` with the URL of your own empty GitHub repository. Do not upload `node_modules`; it is excluded by `.gitignore`.
+## Important Note
+
+Items are stored in a JavaScript array in server memory. Changes are temporary and will reset when the server restarts. This is intentional because the lab task uses an array instead of a database.
