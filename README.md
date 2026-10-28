@@ -19,8 +19,19 @@ To develop a frontend for CRUD operations on an array of items using HTML, CSS, 
 
 ## Output Screenshot
 
-![CRUD Application Output](screenshots/)
+## Output Screenshots
 
+### 1. Item Management Interface
+![Item Management](output/item_management.png)
+
+### 2. Adding an Item
+![Adding an Item](output/addind_item.png)
+
+### 3. Item Added Successfully
+![Item Added](output/item_added.png)
+
+### 4. Item Deleted Successfully
+![Item Deleted](output/item_deleted.png)
 ## How to Run
 
 1. Install Node.js.
